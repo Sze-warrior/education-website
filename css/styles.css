@@ -46,6 +46,17 @@
     transition: 0.3s;
     transition-timing-function: ease-in-out; }
 
+.btn-ghost {
+  width: 165px;
+  height: 45px;
+  border: 2px solid white;
+  text-align: center;
+  background: transparent;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 6px;
+  line-height: 44px; }
+
 .hero-container {
   height: 100%;
   height: 100vh;
@@ -138,6 +149,9 @@
     .hero-title {
       width: 100%; } }
 
+.hero-secondary-title {
+  margin-bottom: 40px; }
+
 html, body {
   padding: 0;
   margin: 0;
@@ -170,7 +184,8 @@ h2 {
 h3 {
   font-weight: 200;
   font-size: 22px;
-  line-height: 25px; }
+  line-height: 29px;
+  margin-top: 0; }
   @media screen and (max-width: 767px) {
     h3 {
       line-height: 24px;

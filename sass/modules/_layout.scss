@@ -38,6 +38,7 @@ h3{
 	font-weight: $font-weight-light;
 	font-size: $font-size-desktop-h3;
 	line-height: $line-height-desktop-h3;
+	margin-top: 0;
 
 	@media screen and (max-width: $mobile-media){
 		line-height: $line-height-mobile-h3;
