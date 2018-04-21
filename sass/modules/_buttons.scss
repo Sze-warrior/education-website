@@ -1,3 +1,5 @@
+@import "../mixins/mixins.scss";
+
 .btn-ghost{
 	width: $btn-width;
 	height: $btn-height;
@@ -8,4 +10,12 @@
     text-align: center;
     border-radius: 6px;	
     line-height: 44px;
+	@include transition(0.2s);
+
+    &:hover{
+		@include transition(0.2s);    	
+    	cursor: pointer;
+		background: rgba(0,0,0, 0.5);
+		color: white;
+    }
 }

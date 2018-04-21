@@ -55,7 +55,19 @@
   border: 2px solid white;
   text-align: center;
   border-radius: 6px;
-  line-height: 44px; }
+  line-height: 44px;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .btn-ghost:hover {
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: white; }
 
 .hero-container {
   height: 100%;
