@@ -120,6 +120,9 @@ p{
 	.column-row{
 		width: 100px;
 		margin-bottom: 0;
+		@include display-flex();
+		@include flex-direction(column);
+		@include justify-content-end();
 
 		&:last-child{
 			margin-bottom: 0;

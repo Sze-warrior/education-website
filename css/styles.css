@@ -255,7 +255,22 @@ p {
   padding: 60px 0 0; }
   .five-column-container .column-row {
     width: 100px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    display: inline;
+    display: inline-block;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    zoom: 1;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: right;
+    -moz-text-align-last: right;
+    text-align-last: right;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end; }
     .five-column-container .column-row:last-child {
       margin-bottom: 0; }
     @media screen and (max-width: 767px) {
