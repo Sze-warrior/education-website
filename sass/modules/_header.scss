@@ -6,11 +6,11 @@
 	background-color: none;
 	position: fixed;
 	z-index: 2;
-	@include transition(0.5s);
+	@include transition(0.3s);
 	transition-timing-function: ease-in-out;
 
 	&.white{
-		@include transition(0.5s);
+		@include transition(0.3s);
 		transition-timing-function: ease-in-out;		
 		background-color: white; 
 		@include box-shadow(1px, 2px, 3px, $color-light-grey);
@@ -28,12 +28,12 @@
 	width: 100px;
 	height: 100px;
 	fill: white;
-	@include transition(0.5s);
+	@include transition(0.3s);
 	transition-timing-function: ease-in-out;
 
 	&.black{
 		fill: black;
-		@include transition(0.5s);
+		@include transition(0.3s);
 		transition-timing-function: ease-in-out;    		
 	}
 }

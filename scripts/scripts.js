@@ -1,16 +1,21 @@
 $(document).ready(function(){       
+
+	//variables
     var scroll_pos = 0;
+    var header = $('.header-container');
+    var headerLogo = $('.header-logo');
+    var intro = $('.intro');
 
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
         
-        if(scroll_pos > 430) {
-        	$('.hide').addClass('show');
-        	$('.header-logo').addClass('black');
-        	$('.header-container').addClass('white');
+        if(scroll_pos > 300) {
+        	$(intro).addClass('show');
+        	$(headerLogo).addClass('black');
+        	$(header).addClass('white');
     	}else{
-        	$('.header-logo').removeClass('black');
-        	$('.header-container').removeClass('white');    		
+        	$(headerLogo).removeClass('black');
+        	$(header).removeClass('white');    		
     	}
 	});
 });

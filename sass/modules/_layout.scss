@@ -3,33 +3,52 @@
 html,body{
 	padding: 0;
 	margin: 0;
+	font-family: "Roboto", Helvetica, Times new roman;
+	height: 100%;
+	position: relative;
 }
 
 .container{
 	max-width: $container-width;
 	display: block;
 	margin: 0 auto;
-	height: 1000px;
 	padding-left: $grid-gutter-width/2;
 	padding-right: $grid-gutter-width/2;
+	height: 100%;
+	padding-bottom: 60px;
 }
 
-.hide-container{
-	height: 100px;
-	padding-top: 40px;
+.intro-row{
+	height: 160px;
+	position: relative;
+	padding-bottom: 40px;
+    max-width: $intro-container;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+	@media screen and (max-width: $tablet-media){
+		height: 140px;
+		padding-bottom: 60px;		
+	}
+
+	@media screen and (max-width:$mobile-media){
+		height: 200px;
+	}
 }
 
-.hide{
+.intro{
+	position: absolute;
 	padding-top: 60px;
 	opacity: 0;
 	font-size: 22px;
-	@include transition(0.5s);
+	@include transition(0.4s);
 	transition-timing-function: ease-in-out;
-}
 
-.show{
-	opacity: 1;
-	padding-top: 0;	
-	@include transition(0.5s);	
-	transition-timing-function: ease-in-out;
+	&.show{
+		opacity: 1;
+		padding-top: 0;	
+		@include transition(0.4s);	
+		transition-timing-function: ease-in-out;
+	}
 }
