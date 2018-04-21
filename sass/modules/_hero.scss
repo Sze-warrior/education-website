@@ -10,4 +10,8 @@
     	background-size: cover;
 		background-image: url("../images/home.jpg");
 	}
+
+	@media screen and (max-width: $mobile-media){
+		margin-bottom: 40px;
+	}
 }

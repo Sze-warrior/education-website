@@ -33,13 +33,13 @@ html,body{
 	}
 
 	@media screen and (max-width:$mobile-media){
-		height: 200px;
+		height: 195px;
 	}
 }
 
 .intro{
 	position: absolute;
-	padding-top: 60px;
+	padding-top: 70px;
 	opacity: 0;
 	font-size: 22px;
 	@include transition(0.4s);

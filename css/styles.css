@@ -52,6 +52,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../images/home.jpg"); }
+  @media screen and (max-width: 767px) {
+    .hero-container {
+      margin-bottom: 40px; } }
 
 html, body {
   padding: 0;
@@ -83,11 +86,11 @@ html, body {
       padding-bottom: 60px; } }
   @media screen and (max-width: 767px) {
     .intro-row {
-      height: 200px; } }
+      height: 195px; } }
 
 .intro {
   position: absolute;
-  padding-top: 60px;
+  padding-top: 70px;
   opacity: 0;
   font-size: 22px;
   -moz-transition: 0.4s;
