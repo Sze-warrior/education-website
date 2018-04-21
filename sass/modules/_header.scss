@@ -3,6 +3,7 @@
 	height: 80px;
 	background-color: red;
 	position: fixed;
+	z-index: 2;
 
 	&.green{
 		background-color: green;
