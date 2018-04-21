@@ -1,11 +1,39 @@
 .header-container {
   width: 100%;
   height: 80px;
-  background-color: red;
+  background-color: none;
   position: fixed;
-  z-index: 2; }
-  .header-container.green {
-    background-color: green; }
+  z-index: 2;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out; }
+  .header-container.white {
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: white; }
+
+.header-logo {
+  width: 100px;
+  height: 100px;
+  padding-left: 20px;
+  fill: white;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out; }
+  .header-logo.black {
+    fill: black;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out; }
 
 html, body {
   padding: 0;
