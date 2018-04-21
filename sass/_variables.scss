@@ -7,8 +7,24 @@ $grid-gutter-width: 40px;
 $split-layout-item-width: 300px;
 $split-layout-item-height: 400px;
 
+//Footer 
+$footer-height: 200px; 
+
+//Header
+$header-height: 80px;
+$header-logo-width: 100px;
+$header-logo-height: 100px;
+
+//Typography
+$font-size-base: 16px;
+$font-size-base-line-height: 24px;
+$font-weight-light: 300;
+$font-weight-mid: 500;
+$font-weight-heavy: 700;
+
 //intro
 $intro-container: 500px;
+$intro-font-size: 22px;
 
 //Media queries
 $mobile-media: 767px;

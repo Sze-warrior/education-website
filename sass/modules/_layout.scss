@@ -8,6 +8,28 @@ html,body{
 	position: relative;
 }
 
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+p{
+	font-size: $font-size-base;
+	line-height: $font-size-base-line-height;
+	color: black;
+}
+
 .container{
 	max-width: $container-width;
 	display: block;
@@ -41,9 +63,10 @@ html,body{
 	position: absolute;
 	padding-top: 70px;
 	opacity: 0;
-	font-size: 22px;
+	font-size: $intro-font-size;
 	@include transition(0.4s);
 	transition-timing-function: ease-in-out;
+	font-weight: $font-weight-light;
 
 	&.show{
 		opacity: 1;

@@ -2,7 +2,7 @@
 
 .header-container{
 	width: 100%;
-	height: 80px;
+	height: $header-height;
 	background-color: none;
 	position: fixed;
 	z-index: 2;
@@ -22,11 +22,16 @@
 	display: block;
 	margin: 0 auto;
 	width: $container-width;
+
+	@media screen and (max-width: $tablet-media){
+		padding-left: $grid-gutter-width/2;
+		padding-right: $grid-gutter-width/2;
+	}
 }
 
 .header-logo{
-	width: 100px;
-	height: 100px;
+	width: $header-logo-width;
+	height: $header-logo-height;
 	fill: white;
 	@include transition(0.3s);
 	transition-timing-function: ease-in-out;

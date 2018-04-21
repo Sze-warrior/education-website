@@ -24,6 +24,10 @@
   display: block;
   margin: 0 auto;
   width: 960px; }
+  @media screen and (max-width: 1025px) {
+    .header-wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .header-logo {
   width: 100px;
@@ -63,6 +67,11 @@ html, body {
   height: 100%;
   position: relative; }
 
+p {
+  font-size: 16px;
+  line-height: 24px;
+  color: black; }
+
 .container {
   max-width: 960px;
   display: block;
@@ -97,7 +106,8 @@ html, body {
   -o-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  transition-timing-function: ease-in-out; }
+  transition-timing-function: ease-in-out;
+  font-weight: 300; }
   .intro.show {
     opacity: 1;
     padding-top: 0;
