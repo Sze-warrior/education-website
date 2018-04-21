@@ -5,7 +5,7 @@
 	height: $header-height;
 	background-color: none;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	@include transition(0.3s);
 	transition-timing-function: ease-in-out;
 

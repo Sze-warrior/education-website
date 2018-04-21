@@ -1,14 +1,16 @@
 //Colors
 $color-light-grey: #e8e8e8;
+$color-grey: #d4d4d4;
 
 //Layouts
 $container-width: 960px;
+$container-centered-width: 640px;
 $grid-gutter-width: 40px;
 $split-layout-item-width: 300px;
 $split-layout-item-height: 400px;
 
 //Footer 
-$footer-height: 200px; 
+$footer-height: 100px; 
 
 //Header
 $header-height: 80px;
@@ -16,15 +18,36 @@ $header-logo-width: 100px;
 $header-logo-height: 100px;
 
 //Typography
-$font-size-base: 16px;
+$font-size-base: 21px;
 $font-size-base-line-height: 24px;
+
+$font-size-base-mobile: 16px;
+$font-size-base-mobile-line-height: 16px;
 $font-weight-light: 300;
 $font-weight-mid: 500;
 $font-weight-heavy: 700;
 
+$font-size-desktop-h1: 64px;
+$font-size-mobile-h1: 48px;
+$line-height-desktop-h1: 78px;
+$line-height-mobile-h1: 64px;
+
+$font-size-desktop-h2: 29px;
+$font-size-mobile-h2: 22px;
+$line-height-desktop-h2: 24px;
+$line-height-mobile-h2: 18px;
+
 //intro
 $intro-container: 500px;
 $intro-font-size: 22px;
+
+//Buttons
+$btn-desktop-size: 29px;
+$btn-mobile-size: 22px;
+$btn-line-height-desktop: 24px;
+$btn-line-height-mobile: 18px;
+
+
 
 //Media queries
 $mobile-media: 767px;

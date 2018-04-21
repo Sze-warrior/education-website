@@ -1,7 +1,10 @@
+@import "../mixins/mixins.scss";
+
 .hero-container{
 	height: 100%;
 	height: 100vh;
-	margin-bottom: 60px;
+	margin-bottom: 90px;
+	position: relative;
 
 	&.parallax{
 		background-attachment: fixed;
@@ -13,5 +16,46 @@
 
 	@media screen and (max-width: $mobile-media){
 		margin-bottom: 40px;
+	}
+}
+
+.hero-overlay{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.hero-content{
+	@include display-flex();
+	@include align-items(center);
+	height: 100%;
+	margin-left: $grid-gutter-width;
+	max-width: $container-width;
+	margin: 0 auto;
+
+	@media screen and (max-width: $tablet-media){
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+
+.hero-title{
+    color: white;
+    z-index: 2;
+    font-weight: $font-weight-light;
+    opacity: 0;
+  	margin-left: 0;
+  	max-width: 75%;
+
+	@include animation(fadeIn 0.7s ease-in-out);
+	@include animation-fill-mode(forwards);
+	@include keyframes(fadeIn) {
+	    from {opacity: 0; margin-top: -150px}
+	    to {opacity: 1; margin-top:0;}		
+	}
+
+	@media screen and (max-width: $tablet-media){
+		width: 100%;
 	}
 }

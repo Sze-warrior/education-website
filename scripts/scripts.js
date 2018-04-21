@@ -4,7 +4,7 @@ $(document).ready(function(){
     var scroll_pos = 0;
     var header = $('.header-container');
     var headerLogo = $('.header-logo');
-    var homeIntro = $('.intro');
+    var homeIntro = $('.intro-header');
 
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
