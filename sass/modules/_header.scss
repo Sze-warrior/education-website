@@ -16,10 +16,15 @@
 	}
 }
 
+.header-wrapper{
+	display: block;
+	margin: 0 auto;
+	width: $container-width;
+}
+
 .header-logo{
 	width: 100px;
 	height: 100px;
-	padding-left: 20px;
 	fill: white;
 	@include transition(0.5s);
 	transition-timing-function: ease-in-out;

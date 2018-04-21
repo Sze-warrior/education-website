@@ -17,10 +17,14 @@
     transition-timing-function: ease-in-out;
     background-color: white; }
 
+.header-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 960px; }
+
 .header-logo {
   width: 100px;
   height: 100px;
-  padding-left: 20px;
   fill: white;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
