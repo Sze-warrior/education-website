@@ -14,8 +14,19 @@
 		background-image: url("../images/home-page.jpg");
 	}
 
+	&.hero-secondary{
+		height: 500px;
+		margin-bottom: 120px;
+		background-image: none;
+		background-color:$color-grey-hero;
+	}
+
 	@media screen and (max-width: $mobile-media){
 		margin-bottom: 70px;
+
+		&.hero-secondary{
+			margin-bottom: 70px;
+		}
 	}
 }
 

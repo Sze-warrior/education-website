@@ -53,6 +53,7 @@ p{
 	color: black;
 	font-weight: $font-weight-light;
 	margin-bottom: 15px;
+	margin-top: 0;
 }
 
 .container{
@@ -83,8 +84,20 @@ p{
     display: block;
     margin: 0 auto;
 
+    &.ourVision{
+    	height: 120px;
+    }
+
+    &.whoweare{
+    	height: 180px;
+    }
+
 	@media screen and (max-width:$mobile-media){
 		height: 110px;
+
+	    &.ourVision{
+	    	height: 140px;
+	    }			
 	}
 }
 
@@ -96,6 +109,12 @@ p{
 	@include transition(0.4s);
 	transition-timing-function: ease-in-out;
 	width: 100%;
+	left: 0;
+	right:0;
+
+	&.centered{
+		max-width: 700px;
+	}
 
 	&.show{
 		opacity: 1;
@@ -106,7 +125,7 @@ p{
 }
 
 .intro-statement{
-	max-width: 640px;
+	max-width: 700px;
     text-align: center;
     display: block;
     margin: 0 auto 100px;
@@ -187,4 +206,12 @@ p{
 	@media screen and (max-width: $mobile-media){
 		@include flex-direction(column);
 	}
+}
+
+.contact-info-heading{
+	font-weight: $font-weight-heavy;
+}
+
+.contact-info{
+	padding-bottom: 25px;
 }
