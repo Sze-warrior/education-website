@@ -366,7 +366,8 @@ a {
     width: 100%;
     padding-top: 20px;
     font-weight: 500;
-    text-align-last: center; }
+    text-align-last: center;
+    text-align: center; }
   .five-column-container .icon-stationary {
     width: 55px;
     height: 80px;
@@ -449,11 +450,13 @@ a {
 
 .footer-container {
   width: 100%;
-  height: 100px;
+  height: 200px;
   background-color: black;
   position: absolute; }
   .footer-container .footer-wrapper {
     max-width: 960px; }
+  .footer-container .footer-header {
+    font-size: 22px; }
 
 .text-center {
   text-align: center; }
