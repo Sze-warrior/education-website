@@ -12,6 +12,15 @@
     	background-repeat: no-repeat;
     	background-size: cover;
 		background-image: url("../images/home-page.jpg");
+
+		@media screen and (max-width: $tablet-media){
+			background-image: url("../images/home-hero-tablet.jpg");
+		}
+
+		@media screen and (max-width: $tablet-media){
+			background-image: url("../images/home-hero-mobile.jpg");
+		}
+
 	}
 
 	&.hero-secondary{
@@ -19,6 +28,10 @@
 		margin-bottom: 120px;
 		background-image: none;
 		background-color:$color-grey-hero;
+	}
+
+	@media screen and (max-width: $tablet-media){
+		margin-bottom: 120px;
 	}
 
 	@media screen and (max-width: $mobile-media){

@@ -93,11 +93,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../images/home-page.jpg"); }
+    @media screen and (max-width: 1025px) {
+      .hero-container.parallax {
+        background-image: url("../images/home-hero-tablet.jpg"); } }
+    @media screen and (max-width: 1025px) {
+      .hero-container.parallax {
+        background-image: url("../images/home-hero-mobile.jpg"); } }
   .hero-container.hero-secondary {
     height: 500px;
     margin-bottom: 120px;
     background-image: none;
     background-color: #3b393a; }
+  @media screen and (max-width: 1025px) {
+    .hero-container {
+      margin-bottom: 120px; } }
   @media screen and (max-width: 767px) {
     .hero-container {
       margin-bottom: 70px; }
@@ -197,6 +206,10 @@ h1 {
   line-height: 78px;
   margin-top: 0;
   margin-bottom: 25px; }
+  @media screen and (max-width: 1025px) {
+    h1 {
+      font-size: 48px;
+      line-height: 60px; } }
   @media screen and (max-width: 767px) {
     h1 {
       line-height: 33px;
@@ -263,13 +276,17 @@ a {
   margin: 0 auto; }
   .intro-row.ourVision {
     height: 120px; }
+    @media screen and (max-width: 1025px) {
+      .intro-row.ourVision {
+        height: 160px; } }
+    @media screen and (max-width: 767px) {
+      .intro-row.ourVision {
+        height: 180px; } }
   .intro-row.whoweare {
     height: 180px; }
   @media screen and (max-width: 767px) {
     .intro-row {
-      height: 110px; }
-      .intro-row.ourVision {
-        height: 140px; } }
+      height: 110px; } }
 
 .intro-header {
   text-align: center;
