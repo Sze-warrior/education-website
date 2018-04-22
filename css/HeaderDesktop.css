@@ -54,11 +54,12 @@
     position: fixed;
     z-index: 2;
     top: 0;
-    margin-right: -200px;
+    opacity: 0;
+    margin-right: 0;
     background-color: rgba(0,0,0,0.8);
     overflow-x: hidden;
     padding-top: 60px;
-    width: 100%;
+    width: 0%;
     color: white;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
@@ -67,7 +68,8 @@
 }
 
 .pollSlider.show{
-    margin-right: 0;
+    width: 100%;
+    opacity: 1;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     -webkit-transition: 0.3s;
