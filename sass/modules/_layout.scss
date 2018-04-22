@@ -56,6 +56,11 @@ p{
 	margin-top: 0;
 }
 
+a{
+	color: white;
+    text-decoration: none;
+}
+
 .container{
 	max-width: $container-width;
 	display: block;
@@ -74,7 +79,11 @@ p{
 
 .container-grey{
 	background-color: $color-grey;
-	padding: 60px $grid-gutter-width/2;
+	padding: 120px $grid-gutter-width/2;
+
+	@media screen and (max-width: $mobile-media){
+		padding: 70px $grid-gutter-width/2;
+	}
 }
 
 
@@ -135,7 +144,7 @@ p{
 	@include display-flex();
 	@include justify-content-space-between();
 	@include flex-direction(row);
-	padding: 60px 0 0;
+	padding: 80px 40px;
 
 	.column-row{
 		width: 100px;
@@ -161,6 +170,7 @@ p{
 	.title{
 		font-size: 18px;
 		width: 100%;
+		padding-top: 20px;
 		font-weight: $font-weight-mid;
 		text-align-last: center;
 	}
@@ -205,6 +215,7 @@ p{
 
 	@media screen and (max-width: $mobile-media){
 		@include flex-direction(column);
+		padding: 60px 0 0;
 	}
 }
 

@@ -11,6 +11,7 @@
     border-radius: 6px;	
     line-height: 44px;
 	@include transition(0.2s);
+	color: white;
 
     &:hover{
 		@include transition(0.2s);    	
@@ -18,4 +19,18 @@
 		background: rgba(0,0,0, 0.5);
 		color: white;
     }
+}
+
+.btn-grey{
+	border: 2px solid $color-grey-hero;
+	color: $color-grey-hero;
+}
+
+.btn-center{
+    margin: 0px auto;
+    display: block;
+
+	@media screen and (max-width: $mobile-media){
+	    margin: 60px auto 0;	
+	}    
 }

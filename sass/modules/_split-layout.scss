@@ -7,11 +7,14 @@
 
 	.split-layout-item{
 		width: $split-layout-item-width;
-		height: $split-layout-item-height;
-		background-color: red;
+		height: 100%;
 
 		&.small{
-			
+			.img-responsive{
+				&:first-child{
+					padding-bottom: 40px;
+				}
+			}	
 		}
 
 		&:first-child{

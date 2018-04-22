@@ -30,5 +30,6 @@ $(document).ready(function(){
 
     $('.menue2').click(function(e){
         $('.pollSlider').toggleClass('show');
+        $(hamburgerBar).toggleClass('hamburger-bar-white');        
     })
 });
