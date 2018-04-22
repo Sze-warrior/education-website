@@ -35,6 +35,7 @@
 	fill: white;
 	@include transition(0.3s);
 	transition-timing-function: ease-in-out;
+	float: left;
 
 	&.black{
 		fill: black;
