@@ -25,6 +25,8 @@ h2{
 	font-weight: $font-weight-light;
 	font-size: $font-size-desktop-h2;
 	line-height: $line-height-desktop-h2;
+	margin-top: 0;
+	margin-bottom: 25px;
 
 	@media screen and (max-width: $mobile-media){
 		line-height: $line-height-mobile-h2;
@@ -33,12 +35,17 @@ h2{
 }
 
 h3{
+	font-weight: $font-weight-light;
+	font-size: $font-size-desktop-h3;
+	line-height: $line-height-desktop-h3;
+	margin-top: 0;
 
+	@media screen and (max-width: $mobile-media){
+		line-height: $line-height-mobile-h3;
+		font-size: $font-size-mobile-h3;
+	}
 }
 
-h4{
-
-}
 
 p{
 	font-size: $font-size-base;
@@ -66,25 +73,18 @@ p{
 
 .container-grey{
 	background-color: $color-grey;
-	padding: $grid-gutter-width/2;
+	padding: 60px $grid-gutter-width/2;
 }
 
 
 .intro-row{
-	height: 60px;
+	height: 120px;
 	position: relative;
-	padding-bottom: 40px;
-    max-width: $intro-container;
     display: block;
     margin: 0 auto;
 
-	@media screen and (max-width: $tablet-media){
-		height: 30px;
-		padding-bottom: 60px;		
-	}
-
 	@media screen and (max-width:$mobile-media){
-		height: 30px;
+		height: 110px;
 	}
 }
 
@@ -110,4 +110,81 @@ p{
     text-align: center;
     display: block;
     margin: 0 auto 100px;
+}
+
+.five-column-container{
+	@include display-flex();
+	@include justify-content-space-between();
+	@include flex-direction(row);
+	padding: 60px 0 0;
+
+	.column-row{
+		width: 100px;
+		margin-bottom: 0;
+		@include display-flex();
+		@include flex-direction(column);
+		@include justify-content-end();
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		@media screen and (max-width: $mobile-media){
+			margin: 0 auto 40px;
+			width: 100%;
+
+			&:last-child{
+				margin-bottom: 0;
+			}			
+		}
+	}
+
+	.title{
+		font-size: 18px;
+		width: 100%;
+		font-weight: $font-weight-mid;
+		text-align-last: center;
+	}
+
+	.icon-stationary{
+		width: 55px;
+		height: 80px;
+    	margin: 0 auto;
+    	display: block;
+	}
+
+	.icon-backpack{
+		width: 63px;
+		height: 80px;
+    	margin: 0 auto;
+    	display: block;
+	}
+
+
+	.icon-book{
+		width: 68px;
+		height: 80px;
+    	margin: 0 auto;
+    	display: block;
+	}	
+
+
+	.icon-equipment{
+		width: 59px;
+		height: 85px;
+    	margin: 0 auto;
+    	display: block;
+	}	
+
+	.icon-electronics{
+		width: 85px;
+		height: 62px;
+    	margin: 0 auto;
+    	display: block;
+	}			
+
+
+	@media screen and (max-width: $mobile-media){
+		@include flex-direction(column);
+	}
 }

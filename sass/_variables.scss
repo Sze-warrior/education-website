@@ -18,35 +18,52 @@ $header-logo-width: 100px;
 $header-logo-height: 100px;
 
 //Typography
-$font-size-base: 21px;
-$font-size-base-line-height: 24px;
 
-$font-size-base-mobile: 16px;
-$font-size-base-mobile-line-height: 16px;
-$font-weight-light: 300;
+//body copy
+$font-size-base: 16px;
+$font-size-base-line-height: 21px;
+
+$font-size-base-mobile: 18px;
+$font-size-base-mobile-line-height: 24px;
+
+
+$font-weight-light: 200;
 $font-weight-mid: 500;
 $font-weight-heavy: 700;
 
+//h1 
 $font-size-desktop-h1: 64px;
-$font-size-mobile-h1: 48px;
 $line-height-desktop-h1: 78px;
-$line-height-mobile-h1: 64px;
 
-$font-size-desktop-h2: 29px;
-$font-size-mobile-h2: 22px;
-$line-height-desktop-h2: 24px;
-$line-height-mobile-h2: 18px;
+$font-size-mobile-h1: 25px;
+$line-height-mobile-h1: 33px;
+
+//h2
+$font-size-desktop-h2: 48px;
+$line-height-desktop-h2: 60px;
+
+$font-size-mobile-h2: 25px;
+$line-height-mobile-h2: 33px;
+
+
+//h3
+$font-size-desktop-h3: 22px;
+$line-height-desktop-h3: 29px;
+
+$font-size-mobile-h3: 18px;
+$line-height-mobile-h3: 24px;
 
 //intro
 $intro-container: 500px;
 $intro-font-size: 22px;
 
 //Buttons
-$btn-desktop-size: 29px;
-$btn-mobile-size: 22px;
-$btn-line-height-desktop: 24px;
-$btn-line-height-mobile: 18px;
-
+$btn-desktop-size: 22px;
+$btn-line-height-desktop: 29px;
+$btn-mobile-size: 18px;
+$btn-line-height-mobile: 24px;
+$btn-width: 165px;
+$btn-height: 45px;
 
 
 //Media queries
