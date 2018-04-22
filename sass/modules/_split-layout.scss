@@ -10,6 +10,9 @@
 		height: $split-layout-item-height;
 		background-color: red;
 
+		&.small{
+			
+		}
 
 		&:first-child{
 			margin-right: $grid-gutter-width;

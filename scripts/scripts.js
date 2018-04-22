@@ -7,7 +7,7 @@ $(document).ready(function(){
     var homeIntro = $('.intro-header');
     var EnglishMenue = $('.EnglishMenue');
     var Maorie = $('.Maorie');
-    var hamburger = $('.navbar-item');
+    var hamburgerBar = $('.hamburger-bar');
 
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
@@ -18,13 +18,13 @@ $(document).ready(function(){
         	$(header).addClass('white');
             $(EnglishMenue).addClass('nav-black');
             $(Maorie).addClass('nav-black');
-            $(hamburger).addClass('navbar-item-white')
+            $(hamburgerBar).addClass('hamburger-bar-black');
     	}else{
         	$(headerLogo).removeClass('black');
         	$(header).removeClass('white'); 
             $(EnglishMenue).removeClass('nav-black');
             $(Maorie).removeClass('nav-black');  
-            $(hamburger).removeClass('navbar-item-white')                         		
+            $(hamburgerBar).removeClass('hamburger-bar-black');
     	}
 	});
 
