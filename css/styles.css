@@ -461,7 +461,7 @@ a {
   .footer-container .footer-details {
     color: white;
     text-align: left;
-    padding-left: 30px; }
+    padding-left: 20px; }
     .footer-container .footer-details .email-word-break {
       display: inline; }
   @media screen and (max-width: 360px) {
