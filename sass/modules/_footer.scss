@@ -9,12 +9,13 @@
 		max-width: $container-width;
 		display: block;
     	margin: 0 auto;		
+	    padding-left: $grid-gutter-width/2;
+	    padding-right: $grid-gutter-width/2;	    
 	}	
 
 	.footer-details{
 	    color: white;
 	    text-align: left;
-	    padding-left: $grid-gutter-width/2;
 
 	    .email-word-break{
 	    	display:inline;

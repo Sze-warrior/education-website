@@ -457,11 +457,12 @@ a {
   .footer-container .footer-wrapper {
     max-width: 960px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px; }
   .footer-container .footer-details {
     color: white;
-    text-align: left;
-    padding-left: 20px; }
+    text-align: left; }
     .footer-container .footer-details .email-word-break {
       display: inline; }
   @media screen and (max-width: 360px) {
