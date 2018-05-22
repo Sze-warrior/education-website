@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
         
-        if(scroll_pos > 300) {
+        if(scroll_pos > 70) {
         	$(homeIntro).addClass('show');
         	$(headerLogo).addClass('black');
         	$(header).addClass('white');

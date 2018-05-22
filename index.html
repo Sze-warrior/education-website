@@ -94,8 +94,8 @@
     <div class="hero-container parallax bg-home">
       <div class="hero-overlay"></div>
       <div class="hero-content">
+        
         <div class="hero-title">
-
           <h1>Helping provide education essentials for others</h1>
           <h3 class="hero-secondary-title">At education education education, we want to develop a resource centre of recycled items for New Zealand students.</h3>
 
@@ -104,8 +104,12 @@
               Learn more
             </div>
           </a>
-
         </div>
+
+        <div class="arrow">
+          <svg width="36" height="18" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="4" fill="none" fill-rule="evenodd" stroke-linecap="square"><path d="M3.179 3.182L17.82 14.818M32.821 3.182L18.18 14.818"/></g></svg>
+        </div>
+
       </div>
     </div>
 
@@ -113,7 +117,7 @@
       <div class="intro-row">
         <h2 class="intro-header">Reuse, Repurpose and Recycle</h2>
       </div>
-      <h3 class="intro-statement">Away from the landfill and into the hands of those in need. We encourange people to recycle and donate the education essentails and supplies that they no longer need to those less fortunate.</h3>
+      <h3 class="intro-statement">Away from the landfill and into the hands of those in need. We encourange people to recycle and donate the education essentials and supplies that they no longer need to those less fortunate.</h3>
 
       <div class="split-layout-row">
         <div class="split-layout-item small">
@@ -131,7 +135,7 @@
     <div class="container-grey">
       <div class="container">
         <h2 class="text-center">Developing a resource centre</h2>
-        <h3 class="content-centered text-center">We are currently engaging in discussion with government, city missions, pastoral care teams, council and teachers/support teachers to obtain and identify essential needs for studentss across the nation. We would love for you to join us on our mission and provide donations included in but not limited to the categories below.</h3>
+        <h3 class="content-centered text-center">We are currently engaging in discussion with government, city missions, pastoral care teams, council and teachers/support teachers to obtain and identify essential needs for students across the nation. We would love for you to join us on our mission and provide donations included in but not limited to the categories below.</h3>
 
         <div class="five-column-container">
 
@@ -180,8 +184,13 @@
     </footer>
 
   </main>
-</body>
-<script src="http://code.jquery.com/jquery-2.2.4.js"></script>
-<script src="scripts/scripts.js"></script>
 
+  <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+  <script>
+    if (typeof jQuery == 'undefined') {
+      document.write('<script src="js/jquery.min.js">\x3C/script>');
+    }
+  </script>
+  <script src="scripts/scripts.js"></script>
+</body>
 </html>

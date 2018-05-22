@@ -12,18 +12,25 @@
     line-height: 44px;
 	@include transition(0.2s);
 	color: white;
+	font-weight: $font-weight-mid;
 
     &:hover{
 		@include transition(0.2s);    	
     	cursor: pointer;
-		background: rgba(0,0,0, 0.5);
-		color: white;
+		background: white;
+		color: black;
     }
 }
 
 .btn-grey{
 	border: 2px solid $color-grey-hero;
 	color: $color-grey-hero;
+
+    &:hover{
+		background: $color-grey-hero;
+		color: white;
+    }
+
 }
 
 .btn-center{
